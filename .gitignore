@@ -1,2 +1,5 @@
 # default symlink of nix build
 result
+
+# tarball installers
+*.tar.gz
