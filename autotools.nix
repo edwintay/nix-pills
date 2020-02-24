@@ -3,6 +3,7 @@ pkgs: attrs:
   let defaultAttrs = {
     builder = "${bash}/bin/bash";
     args = [ ./builder.sh ];
+    setup = ./setup.sh;
     baseInputs = [
       binutils-unwrapped
       coreutils
