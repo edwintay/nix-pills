@@ -6,6 +6,7 @@ pkgs: attrs:
     baseInputs = [
       binutils-unwrapped
       coreutils
+      findutils
       gawk
       gcc
       gnugrep
@@ -13,6 +14,7 @@ pkgs: attrs:
       gnused
       gnutar
       gzip
+      patchelf
     ];
     buildInputs = [];
     system = builtins.currentSystem;
