@@ -4,4 +4,10 @@ let
 in mkDerivation {
   name = "graphviz";
   src = ./graphviz-2.38.0.tar.gz;
+  buildInputs = with pkgs; [
+    bzip2
+    fontconfig
+    gd
+    libjpeg
+  ];
 }
